@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>create a variable in JavaScript</h1>
+    <p id="demo"></p>
+    <p id="undefined"></p>
+    <script>
+      let carName = "volvo";
+      //   let carName; //-> cannot re-declare variable declared with let and const
+      let carType; // if variable is not assigned any value -> undefined
+      document.getElementById("demo").innerHTML = carName;
+      document.getElementById("undefined").innerHTML = carType;
+    </script>
+  </body>
+</html>
