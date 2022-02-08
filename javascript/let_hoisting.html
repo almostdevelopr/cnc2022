@@ -8,10 +8,17 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="init"></p>
 		<script>
+			// var hoisting
 			carName = "Volvo";
 			document.getElementById("demo").innerHTML = carName;
 			var carName;
+
+			//let hoisting
+			brandName = "BMW";
+			let brandName = "Ferrari";
+			document.getElementById("init").innerHTML = brandName;
 		</script>
 	</body>
 </html>
