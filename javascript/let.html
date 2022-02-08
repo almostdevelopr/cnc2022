@@ -26,13 +26,13 @@
 
       document.getElementById("demo1").innerHTML = var_x; //here 2 only
 
-      let blockLevelVariable = 12;
+      var blockLevelVariable = 12;
       {
-        let blockLevelVariable = 21;
-        document.getElementById("block").innerHTML = blockLevelVariable;
+        var blockLevelVariable = 21;
+        // document.getElementById("block").innerHTML = blockLevelVariable;
       }
       {
-        let blockLevelVariable = 23;
+        var blockLevelVariable = 23;
         document.getElementById("block2").innerHTML = blockLevelVariable;
       }
       //   document.getElementById("global").innerHTML = blockLevelVariable;
