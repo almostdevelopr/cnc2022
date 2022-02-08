@@ -11,13 +11,19 @@
 		<p>Declaring a constant array does NOT make the element unchangeable</p>
 		<p id="demo"></p>
 		<script>
-			const cars = ["volvo", "bmw", "ferrari", "maruti"];
-			// change a value
-			cars[1] = "suzuki";
-			// document.getElementById("demo").innerHTML = cars;
-			cars.push("audi");
-			// cars.pop();
-			document.getElementById("demo").innerHTML = cars;
+			try {
+				const cars = ["volvo", "bmw", "ferrari", "maruti"];
+				// change a value
+				cars[1] = "suzuki";
+				// document.getElementById("demo").innerHTML = cars;
+				cars.push("audi");
+				// cars.pop();
+
+				//reassign new array to same name const
+				cars = ["a", "b"];
+			} catch (error) {
+				document.getElementById("demo").innerHTML = error;
+			}
 		</script>
 	</body>
 </html>
