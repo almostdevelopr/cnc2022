@@ -9,12 +9,23 @@
 	<body>
 		<p id="demo"></p>
 		<p id="increment"></p>
+		<p id="expo"></p>
+		<p id="err"></p>
 		<script>
 			let x = 92;
 			document.getElementById("demo").innerHTML = x;
 			x++;
 			x--;
 			document.getElementById("increment").innerHTML = --x;
+			const base = 6;
+			const power = 2;
+			document.getElementById("expo").innerHTML = Math.pow(base, power);
+			try {
+				let a = 5;
+				document.getElementById("err").innerHTML = a;
+			} catch (err) {
+				document.getElementById("err").innerHTML = a;
+			}
 		</script>
 	</body>
 </html>
