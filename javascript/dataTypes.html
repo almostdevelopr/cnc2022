@@ -10,6 +10,7 @@
 		<p id="number"></p>
 		<p id="string"></p>
 		<p id="object"></p>
+		<p id="function"></p>
 		<script>
 			const a = 12;
 			const b = "Hi JS!";
@@ -23,7 +24,14 @@
 			document.getElementById("string").innerHTML = typeof b;
 			document.getElementById("object").innerHTML = typeof c;
 
-			// document.getElementById('number')
+			// function dec
+			function findPower(base, power) {
+				return base ** power;
+			}
+
+			// call function and store result into result variable
+			const result = findPower(9, 3);
+			document.getElementById("function").innerHTML = result;
 		</script>
 	</body>
 </html>
