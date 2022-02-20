@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="person"></p>
 		<script>
 			const car = { name: "Volvo", model: "2022", type: "Petrol" };
 			document.getElementById("demo").innerHTML =
@@ -15,6 +16,15 @@
 
 			//It is a common practice to declare objects with the const keyword.
 			// objects are containers for names values like properties.
+			const person = {
+				firstName: "John",
+				lastName: "Doe",
+				age: 32,
+				fullName: function () {
+					return firstName + " " + lastName;
+				},
+			};
+			document.getElementById("person").innerHTML = person.fullName();
 		</script>
 	</body>
 </html>
