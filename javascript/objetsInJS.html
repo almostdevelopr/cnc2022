@@ -20,12 +20,16 @@
 				firstName: "John",
 				lastName: "Doe",
 				age: 32,
-				fullName: function () {
-					return this.firstName + " " + this.lastName;
-				},
+				// fullName: function () {
+				// 	return this.firstName + " " + this.lastName;
+				// },
+				fullName: (firstName, lastName) => this.firstName + " " + this.lastName,
 			};
 			document.getElementById("person").innerHTML =
-				"Full name of the person is " + person.fullName();
+				"Full name of the person is " +
+				person.fullName(person.firstName, person.lastName);
+
+			// this is not a variable. It is a keyword. You cannot change the value of this.
 		</script>
 	</body>
 </html>
