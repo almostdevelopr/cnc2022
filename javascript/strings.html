@@ -7,14 +7,22 @@
 		<title>Strings in JS</title>
 	</head>
 	<body>
-		<p id="demo"></p>
+		<p id="demo">Please visit Microsoft</p>
+		<button onclick="replaceKeyword()">Try me!</button>
 		<script>
-			const x = new String("John");
-			const y = new String("John");
-			// document.getElementById("demo").innerHTML = x == y;
-			// comparision of objects always return false
-			const z = "John";
-			document.getElementById("demo").innerHTML = z === y;
+			// const x = new String("John");
+			// const y = new String("John");
+			// // document.getElementById("demo").innerHTML = x == y;
+			// // comparision of objects always return false
+			// const z = "John";
+			// document.getElementById("demo").innerHTML = z === y;
+			function replaceKeyword() {
+				const txt = document.getElementById("demo").innerHTML;
+				document.getElementById("demo").innerHTML = txt.replace(
+					"Microsoft",
+					"W3School"
+				);
+			}
 		</script>
 	</body>
 </html>
