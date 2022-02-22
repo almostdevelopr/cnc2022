@@ -11,13 +11,18 @@
 		<p id="demo"></p>
 		<script>
 			const fruits = ["mango", "banana", "grapes", "apple"];
-			let fLength = fruits.length;
+			//let fLength = fruits.length;
 			let text = "<ul>";
-			for (let i = 0; i < fLength; i++) {
-				text += "<li>" + fruits[i] + "</li>";
-			}
+			// for (let i = 0; i < fLength; i++) {
+			// 	text += "<li>" + fruits[i] + "</li>";
+			// }
+			fruits.forEach(iterateEachItem);
 			text += "</ul>";
 			document.getElementById("demo").innerHTML = text;
+
+			function iterateEachItem(value) {
+				text += "<li>" + value + "</li>";
+			}
 		</script>
 	</body>
 </html>
