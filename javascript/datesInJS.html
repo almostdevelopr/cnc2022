@@ -9,8 +9,8 @@
 	<body>
 		<p id="demo"></p>
 		<script>
-			const d = new Date();
-			document.getElementById("demo").innerHTML = d;
+			const d = new Date(1997, 9, 20, 10, 10);
+			document.getElementById("demo").innerHTML = d.toDateString();
 			console.log(typeof d);
 		</script>
 	</body>
