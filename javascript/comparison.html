@@ -12,8 +12,14 @@
 		<p id="demo"></p>
 		<script>
 			function checkEligibilty() {
+				let votable;
 				const age = document.getElementById("age").value;
-				const votable = age > 18 ? "Old enough" : "Too young";
+				if (isNaN(age)) {
+					votable = "Age is not a number";
+				} else {
+					votable = Math.abs(age) > 18 ? "Old enough" : "Too young";
+				}
+				// const votable = age > 18 ? "Old enough" : "Too young";
 				document.getElementById("demo").innerHTML = votable + " to vote.";
 			}
 		</script>
