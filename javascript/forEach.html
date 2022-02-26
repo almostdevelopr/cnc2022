@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>forEach in JS</title>
+	</head>
+	<body>
+		<p id="demo"></p>
+		<script>
+			const numbers = [1, 2, 3, 4, 5, 6, 64, 7];
+			let text = "";
+			numbers.forEach(myCallbackFunction);
+			function myCallbackFunction(value) {
+				text += value + " ";
+				console.log(text);
+			}
+			document.getElementById("demo").innerHTML = text;
+		</script>
+	</body>
+</html>
