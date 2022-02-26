@@ -9,6 +9,13 @@
 	<body>
 		<h3>The for in loop in JS loops through the properties of objects</h3>
 		<p id="demo"></p>
-		<script></script>
+		<script>
+			const person = { firstName: "John", lastName: "Doe", age: 32 };
+			let text = "";
+			for (prop in person) {
+				text += person[prop] + " ";
+			}
+			document.getElementById("demo").innerHTML = text;
+		</script>
 	</body>
 </html>
