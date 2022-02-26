@@ -6,5 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Loops in JS</title>
 	</head>
-	<body></body>
+	<body>
+		<p id="demo"></p>
+		<script>
+			const cars = ["BMW", "Mercedes", "Volvo", "Maruti", "Suzuki"];
+			let text = "";
+			for (let i = 0; i < cars.length; i++) {
+				text += cars[i] + "<br>";
+			}
+			document.getElementById("demo").innerHTML = text;
+		</script>
+	</body>
 </html>
