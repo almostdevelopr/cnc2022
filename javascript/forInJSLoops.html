@@ -13,6 +13,9 @@
 			const person = { firstName: "John", lastName: "Doe", age: 32 };
 			let text = "";
 			for (prop in person) {
+				if (person[prop] == 32) {
+					continue;
+				}
 				text += person[prop] + " ";
 			}
 			document.getElementById("demo").innerHTML = text;
