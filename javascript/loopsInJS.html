@@ -8,13 +8,18 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="demo1"></p>
 		<script>
 			const cars = ["BMW", "Mercedes", "Volvo", "Maruti", "Suzuki"];
 			let text = "";
-			for (let i = 0; i < cars.length; i++) {
-				text += "The number is " + i + "<br>";
+			let someVariable = 10;
+			for (let someVariable = 0; someVariable < cars.length; someVariable++) {
+				// text += "The number is " + i + "<br>";
+				document.getElementById("demo").innerHTML =
+					"The inner someVariable " + someVariable;
 			}
-			document.getElementById("demo").innerHTML = text; //+ "<br>" + text.length;
+			document.getElementById("demo1").innerHTML =
+				"The outer someVariable " + someVariable; //+ "<br>" + text.length;
 		</script>
 	</body>
 </html>
