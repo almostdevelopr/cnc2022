@@ -10,10 +10,10 @@
 		<p id="demo"></p>
 		<p id="demo1"></p>
 		<script>
-			const cars = ["BMW", "Mercedes", "Volvo", "Maruti", "Suzuki"];
+			const cars = 10; //["BMW", "Mercedes", "Volvo", "Maruti", "Suzuki"];
 			let text = "";
-			let someVariable = 10;
-			for (let someVariable = 0; someVariable < cars.length; someVariable++) {
+			var someVariable = 10;
+			for (var someVariable = 0; someVariable <= cars; someVariable++) {
 				// text += "The number is " + i + "<br>";
 				document.getElementById("demo").innerHTML =
 					"The inner someVariable " + someVariable;
