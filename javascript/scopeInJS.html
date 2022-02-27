@@ -10,11 +10,11 @@
 		<p id="demo"></p>
 		<p id="demo2"></p>
 		<script>
+			let carName = "Volvo";
 			showVariableScope();
 			function showVariableScope() {
-				let carName = "Volvo";
 				document.getElementById("demo").innerHTML =
-					"Typeof : " + typeof carName + "Value : " + carName;
+					"Typeof : " + typeof carName + " " + "Value : " + carName;
 			}
 			document.getElementById("demo2").innerHTML = "Typeof : " + typeof carName; // typeof -> undefined
 		</script>
