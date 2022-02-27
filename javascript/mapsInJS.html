@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="demo1"></p>
 		<script>
 			const fruits = new Map([
 				["apples", 500],
@@ -20,6 +21,18 @@
 			});
 			fruits.set("pineapples", 600);
 			document.getElementById("demo").innerHTML = text;
+
+			const cars = new Map([
+				["BMW", 120],
+				["Mercedes", 123],
+				["Ferarri", 124],
+				["Lamborghini", 145],
+			]);
+			let textCars = "";
+			for (const x of cars.entries()) {
+				textCars += x + "<br>";
+			}
+			document.getElementById("demo1").innerHTML = textCars;
 		</script>
 	</body>
 </html>
