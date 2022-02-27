@@ -15,11 +15,11 @@
 				["grapes", 300],
 			]);
 			let text = "";
-			// fruits.forEach((key, value) => {
-			// 	text += key + "<br>";
-			// });
+			fruits.forEach((value, key) => {
+				text += key + " = " + value + "<br>";
+			});
 			fruits.set("pineapples", 600);
-			document.getElementById("demo").innerHTML = fruits;
+			document.getElementById("demo").innerHTML = text;
 		</script>
 	</body>
 </html>
