@@ -7,6 +7,7 @@
 		<title>Sets in JS</title>
 	</head>
 	<body>
+		<h3>ForEch calls a function for each element of the set</h3>
 		<p id="demo"></p>
 		<script>
 			const letters = new Set();
@@ -18,11 +19,12 @@
 			letters.add(c);
 			letters.add(c); // distinct values only
 			let text = "";
-			document.getElementById("demo").innerHTML = letters.size;
+			// document.getElementById("demo").innerHTML = letters.size;
 			letters.forEach((element) => {
-				text += element + " ";
-				console.log(text);
+				text += element + "<br>";
+				// console.log(text);
 			});
+			document.getElementById("demo").innerHTML = text;
 		</script>
 	</body>
 </html>
