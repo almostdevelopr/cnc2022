@@ -8,5 +8,12 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<script>
+			try {
+				addlert("Please learn try catch in JS");
+			} catch (err) {
+				document.getElementById("demo").innerHTML = err.message;
+			}
+		</script>
 	</body>
 </html>
