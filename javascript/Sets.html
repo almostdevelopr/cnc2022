@@ -17,7 +17,12 @@
 			letters.add(b);
 			letters.add(c);
 			letters.add(c); // distinct values only
+			let text = "";
 			document.getElementById("demo").innerHTML = letters.size;
+			letters.forEach((element) => {
+				text += element + " ";
+				console.log(text);
+			});
 		</script>
 	</body>
 </html>
