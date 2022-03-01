@@ -10,6 +10,11 @@
 		<h3>Hoisting in JavaScript</h3>
 		<p>Hoisting is JS default to move the variable declaration to the top</p>
 		<p id="demo"></p>
-		<script></script>
+		<script>
+			hoistedVariable = 10;
+			elem = document.getElementById("demo");
+			elem.innerHTML = hoistedVariable;
+			var hoistedVariable;
+		</script>
 	</body>
 </html>
