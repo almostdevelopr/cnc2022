@@ -20,13 +20,10 @@
 
 			const elem2 = document.getElementById("demo2");
 
-			try {
-				x = 3.14;
-				const elem = document.getElementById("demo");
-				elem.innerHTML = "x : " + x;
-			} catch (e) {
-				document.getElementById("demo").innerHTML = e;
-			}
+			x = 3.14;
+			const elem = document.getElementById("demo");
+			elem.innerHTML = "x : " + x;
+
 			function someFunction() {
 				elem2.innerHTML = x;
 			}
