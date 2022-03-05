@@ -8,6 +8,16 @@
 	</head>
 	<body>
 		<h2>Hoisting in let keyword</h2>
-		<p></p>
+		<p>
+			In JS, variable declaration are hoisted meaning that we can use varibale
+			before it has been declared.
+		</p>
+		<p id="demo"></p>
+		<script>
+			someVariable = 10;
+			const elem = document.getElementById("demo");
+			elem.innerHTML = someVariable;
+			var someVariable;
+		</script>
 	</body>
 </html>
