@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Strict mode in JS</title>
+	</head>
+	<body>
+		<h2>Strict mode in JS</h2>
+		<p>
+			The purpose of "use strict" is to indicate that the code should be
+			executed in "strict mode".
+		</p>
+		<p id="demo">strict mode testing..</p>
+		<script>
+			"use strict";
+			try {
+				x = 3.14;
+				const elem = document.getElementById("demo");
+				elem.innerHTML = "x : " + x;
+			} catch (e) {
+				document.getElementById("demo").innerHTML = e;
+			}
+		</script>
+	</body>
+</html>
