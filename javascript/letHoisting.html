@@ -19,10 +19,14 @@
 		</p>
 		<p id="demo"></p>
 		<script>
-			someVariable = 10;
-			const elem = document.getElementById("demo");
-			elem.innerHTML = someVariable;
-			var someVariable;
+			try {
+				someVariable = 10;
+				const elem = document.getElementById("demo");
+				elem.innerHTML = someVariable;
+				let someVariable;
+			} catch (e) {
+				document.getElementById("demo").innerHTML = e;
+			}
 		</script>
 	</body>
 </html>
