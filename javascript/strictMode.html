@@ -13,8 +13,13 @@
 			executed in "strict mode".
 		</p>
 		<p id="demo">strict mode testing..</p>
+		<p id="demo2"></p>
 		<script>
 			"use strict";
+			let x;
+
+			const elem2 = document.getElementById("demo2");
+
 			try {
 				x = 3.14;
 				const elem = document.getElementById("demo");
@@ -22,6 +27,10 @@
 			} catch (e) {
 				document.getElementById("demo").innerHTML = e;
 			}
+			function someFunction() {
+				elem2.innerHTML = x;
+			}
+			someFunction();
 		</script>
 	</body>
 </html>
