@@ -25,11 +25,11 @@
 				lastName: "Doe",
 				age: 24,
 				fullName: function () {
-					this.firstName + " " + this.lastName;
+					return this.firstName + " " + this.lastName;
 				},
 			};
 			let greet = (name) => "Hey " + name + "!";
-			document.getElementById("greet").innerHTML = greet("John");
+			document.getElementById("greet").innerHTML = greet(person.fullName());
 		</script>
 	</body>
 </html>
