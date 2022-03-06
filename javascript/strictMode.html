@@ -16,18 +16,24 @@
 		<p id="demo2"></p>
 		<script>
 			"use strict";
-			// let x;
+			let x;
 
 			const elem2 = document.getElementById("demo2");
 			{
-				let x = 3.14;
+				x = 3.14;
 				const elem = document.getElementById("demo");
 				elem.innerHTML = "x : " + x;
 			}
 			function someFunction() {
+				x = 32;
 				elem2.innerHTML = x;
 			}
 			someFunction();
+
+			const someObject = {
+				name: "Some",
+				age: 27,
+			};
 		</script>
 	</body>
 </html>
