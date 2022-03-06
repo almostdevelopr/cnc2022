@@ -10,7 +10,15 @@
 		<p id="demo"></p>
 		<script>
 			/* JavaScript Classes are templates for JavaScript Objects. */
-			cla;
+			class Car {
+				constructor(name, year) {
+					this.name = name;
+					this.year = year;
+				}
+			}
+			const carObj1 = new Car("ford", 1988);
+			document.getElementById("demo").innerHTML =
+				carObj1.name + " " + carObj1.year;
 		</script>
 	</body>
 </html>
