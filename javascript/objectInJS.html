@@ -19,8 +19,11 @@
 				fullName: function () {
 					return this.firstName + " " + this.lastName;
 				},
+				objectFunction: function () {
+					return this;
+				},
 			};
-			document.getElementById("demo").innerHTML = person.fullName();
+			document.getElementById("demo").innerHTML = person.objectFunction();
 		</script>
 	</body>
 </html>
