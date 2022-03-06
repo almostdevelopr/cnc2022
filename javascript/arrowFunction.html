@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Array function in JS</title>
+	</head>
+	<body>
+		<p id="before"></p>
+		<p id="after"></p>
+		<script>
+			/*before arrow function*/
+			var hey = function () {
+				return "Hey !arrow function";
+			};
+			document.getElementById("before").innerHTML = hey();
+			/*after arrow function*/
+			var heyy = () => "Hey arrow function";
+			document.getElementById("after").innerHTML = heyy();
+		</script>
+	</body>
+</html>
