@@ -9,6 +9,7 @@
 	<body>
 		<p id="before"></p>
 		<p id="after"></p>
+		<p id="greet"></p>
 		<script>
 			/*before arrow function*/
 			var hey = function () {
@@ -18,6 +19,17 @@
 			/*after arrow function*/
 			var heyy = () => "Hey arrow function";
 			document.getElementById("after").innerHTML = heyy();
+
+			const person = {
+				firstName: "John",
+				lastName: "Doe",
+				age: 24,
+				fullName: function () {
+					this.firstName + " " + this.lastName;
+				},
+			};
+			let greet = (name) => "Hey " + name + "!";
+			document.getElementById("greet").innerHTML = greet("John");
 		</script>
 	</body>
 </html>
