@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>This in strict mode of JS</title>
+	</head>
+	<body>
+		<p>
+			The this keyword in functions behaves differently in strict mode. The this
+			keyword refers to the object that called the function. <br />
+			If the object is not specified, functions in strict mode will return
+			<b>undefined</b> and functions in normal mode will return the
+			<b>global object (window)</b>:
+		</p>
+		<script>
+			"use strict";
+			function someFunction() {
+				alert(this);
+			}
+			someFunction();
+		</script>
+	</body>
+</html>
