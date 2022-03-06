@@ -14,12 +14,21 @@
 			<b>undefined</b> and functions in normal mode will return the
 			<b>global object (window)</b>:
 		</p>
+		<p id="demo">
+			This section will show some error : reserved keyword for strict mode in
+			JS.
+		</p>
 		<script>
 			"use strict";
 			function someFunction() {
 				alert(this);
 			}
-			someFunction();
+			// someFunction();
+			try {
+				let someVariable = 898;
+			} catch (e) {
+				document.getElementById("demo").innerHTML = e;
+			}
 		</script>
 	</body>
 </html>
