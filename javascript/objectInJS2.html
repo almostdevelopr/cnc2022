@@ -17,20 +17,21 @@
 				lastName: "Doe",
 				age: 40,
 				eyecolor: "blue",
-				language: "en",
+				language: "",
 				members: {
 					mem1: "John",
 					mem2: "Emery",
 				},
-				get lang() {
-					return this.language;
+				set lang(value) {
+					this.language = value;
 				},
 			};
 
 			const copyPerson = person;
 			copyPerson.age = 32;
 			//person object
-			elemPerson.innerHTML = person.lang; //person.age;
+			person.lang = "en";
+			elemPerson.innerHTML = person.language; //person.age;
 			elemCopyPerson.innerHTML = copyPerson.age;
 		</script>
 	</body>
