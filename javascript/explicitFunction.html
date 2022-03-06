@@ -12,6 +12,7 @@
 			both be used to call an object method with another object as argument.
 		</p>
 		<p id="demo"></p>
+		<p id="bind"></p>
 		<script>
 			const person1 = {
 				fullName: function () {
@@ -24,6 +25,20 @@
 			};
 			document.getElementById("demo").innerHTML =
 				person1.fullName.call(person2);
+
+			const person = {
+				firstName: "Alex",
+				lastName: "Mcwell",
+				fullName: function () {
+					return this.firstName + " " + this.lastName;
+				},
+			};
+			const member = {
+				firstName: "Hege",
+				lastName: "Nelsen",
+			};
+			document.getElementById("bind").innerHTML =
+				person.fullName.bind(member)();
 		</script>
 	</body>
 </html>
