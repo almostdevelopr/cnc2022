@@ -23,7 +23,7 @@
 					mem2: "Emery",
 				},
 				set lang(value) {
-					this.language = value;
+					this.language = value.toUpperCase();
 				},
 			};
 
@@ -31,8 +31,21 @@
 			copyPerson.age = 32;
 			//person object
 			person.lang = "en";
-			elemPerson.innerHTML = person.language; //person.age;
-			elemCopyPerson.innerHTML = copyPerson.age;
+			// elemPerson.innerHTML = person.language; //person.age;
+			// elemCopyPerson.innerHTML = copyPerson.age;
+
+			/*JS objects constructors*/
+			function Person(first, last, age, eye) {
+				(this.firstName = first),
+					(this.lastName = last),
+					(this.age = age),
+					(this.eyeColor = eye),
+					(this.name = function () {
+						return this.firstName + " " + this.lastName;
+					});
+			}
+			const myFather = new Person("John", "Doe", 32, "Brown");
+			elemPerson.innerHTML = "Father of examples is : " + myFather.name();
 		</script>
 	</body>
 </html>
