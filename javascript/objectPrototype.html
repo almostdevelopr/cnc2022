@@ -19,10 +19,13 @@
 			}
 
 			Person.prototype.nationality = "English";
+			Person.prototype.gender = "Male";
 
 			const myFather = new Person("John", "Doe", 50, "blue");
 			document.getElementById("demo").innerHTML =
 				"The nationality of my father is " + myFather.nationality;
+			document.getElementById("demo1").innerHTML =
+				"Gender is " + myFather.gender;
 		</script>
 	</body>
 </html>
