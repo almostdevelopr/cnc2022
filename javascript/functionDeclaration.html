@@ -43,6 +43,14 @@
 				}
 				return sum;
 			}
+			const person = {
+				firstName: "John",
+				lastName: "Doe",
+				fullName: function () {
+					return this.firstName + " " + this.lastName;
+				},
+			};
+			document.getElementById("demo3").innerHTML = person.fullName();
 		</script>
 	</body>
 </html>
