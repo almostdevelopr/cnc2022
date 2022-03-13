@@ -10,18 +10,30 @@
 		<p id="demo"></p>
 		<script>
 			const person = {
-				firstName: "John",
-				lastName: "Doe",
-				fullName: function () {
-					return this.firstName + " " + this.lastName;
+				// firstName: "John",
+				// lastName: "Doe",
+				fullName: function (city, country) {
+					return (
+						this.firstName + " " + this.lastName + "," + city + "," + country
+					);
 				},
 			};
-			/* he call() method is a predefined JavaScript method.
-
-It can be used to invoke (call) a method with an owner object as an argument (parameter).
-
-With call(), an object can use a method belonging to another object. */
-			document.getElementById("demo").innerHTML = person.fullName();
+			/* The call() method is a predefined JavaScript method.
+            It can be used to invoke (call) a method with an owner object as an argument (parameter).
+            With call(), an object can use a method belonging to another object. */
+			const person1 = {
+				firstName: "John",
+				lastName: "Doe",
+			};
+			const person2 = {
+				firstName: "Mary",
+				lastName: "Doe",
+			};
+			document.getElementById("demo").innerHTML = person.fullName.call(
+				person2,
+				"Oslo",
+				"Norway"
+			);
 		</script>
 	</body>
 </html>
