@@ -8,12 +8,20 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="demo2"></p>
 		<script>
 			const sum = sumOfTwoNumbers(2, "5");
-			document.getElementById("demo").innerHTML = sum;
+			document.getElementById("demo").innerHTML = "Sum of two numbers : " + sum;
 			function sumOfTwoNumbers(num1, num2) {
 				return num1 + num2;
 			}
+			const productOfTwoNumbers = function (num1, num2) {
+				return num1 * num2;
+			};
+			/* productOfTwoNumbers is a variable which stores function definition and can be called using variable name only
+			 */
+			document.getElementById("demo2").innerHTML =
+				"Product : " + productOfTwoNumbers(3, 4);
 		</script>
 	</body>
 </html>
