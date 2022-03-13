@@ -23,9 +23,25 @@
 			 */
 			document.getElementById("demo2").innerHTML =
 				"Product : " + productOfTwoNumbers(3, 4);
-			document.getElementById("demo3").innerHTML = squareOfNumber(5);
+			document.getElementById("demo3").innerHTML = sumOfAll(5, 45, 98, -3);
 			function squareOfNumber(num) {
 				return num * num;
+			}
+			function findMaxValue() {
+				let max = -Infinity;
+				for (let i = 0; i < arguments.length; i++) {
+					if (arguments[i] > max) {
+						max = arguments[i];
+					}
+				}
+				return max;
+			}
+			function sumOfAll() {
+				let sum = 0;
+				for (let i = 0; i < arguments.length; i++) {
+					sum += arguments[i];
+				}
+				return sum;
 			}
 		</script>
 	</body>
