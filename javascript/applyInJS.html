@@ -8,6 +8,7 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="demo1"></p>
 		<script>
 			const person = {
 				fullName: function (city, country) {
@@ -29,7 +30,11 @@
 			};
 			document.getElementById("demo").innerHTML = person.fullName.apply(
 				person1,
-				["oslo", "norway"]
+				["oslo", "norway"] //array arguments
+			);
+			document.getElementById("demo1").innerHTML = Math.max.apply(
+				null,
+				[1, 2, 43, 45, 6, -8]
 			);
 		</script>
 	</body>
