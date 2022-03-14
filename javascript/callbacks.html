@@ -12,13 +12,13 @@
 			function displayResult(result) {
 				document.getElementById("demo").innerHTML = result;
 			}
-			function sumOfTwoNumbers(num1, num2) {
+			function sumOfTwoNumbers(num1, num2, myCallback) {
 				let sum = 0;
 				sum = num1 + num2;
-				return sum;
+				myCallback(sum);
 			}
-			const result = sumOfTwoNumbers(5, 7);
-			displayResult(result);
+			const result = sumOfTwoNumbers(5, 7, displayResult);
+			// displayResult(result);
 		</script>
 	</body>
 </html>
