@@ -8,10 +8,17 @@
 	</head>
 	<body>
 		<p id="demo"></p>
+		<p id="demo1"></p>
 		<script>
 			setTimeout(callbackFunction, 3000);
 			function callbackFunction() {
 				document.getElementById("demo").innerHTML = "I love you!";
+			}
+			setInterval(showTime, 1000);
+			function showTime() {
+				let d = new Date();
+				document.getElementById("demo1").innerHTML =
+					d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 			}
 		</script>
 	</body>
