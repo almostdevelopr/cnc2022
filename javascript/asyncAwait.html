@@ -10,12 +10,16 @@
 		<p id="demo"></p>
 		<script>
 			/*"async and await make promises easier to write"
-            async makes a function return a Promise
-            await makes a function wait for a Promise*/
-			function myDisplay(value) {
-				document.getElementById("demo").innerHTML = value;
+			         async makes a function return a Promise
+			         await makes a function wait for a Promise*/
+			async function myDisplay() {
+				let myPromise = new Promise(function (resolve, reject) {
+					resolve("Hi JS!");
+				});
+				document.getElementById("demo").innerHTML = await myPromise;
 			}
-			async function returnPromise() {
+			myDisplay();
+			/* async function returnPromise() {
 				return "Hello";
 			}
 			returnPromise().then(
@@ -25,7 +29,7 @@
 				function (error) {
 					myDisplay(error);
 				}
-			);
+			); */
 		</script>
 	</body>
 </html>
