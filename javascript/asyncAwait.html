@@ -8,6 +8,24 @@
 	</head>
 	<body>
 		<p id="demo"></p>
-		<script></script>
+		<script>
+			/*"async and await make promises easier to write"
+            async makes a function return a Promise
+            await makes a function wait for a Promise*/
+			function myDisplay(value) {
+				document.getElementById("demo").innerHTML = value;
+			}
+			async function returnPromise() {
+				return "Hello";
+			}
+			returnPromise().then(
+				function (value) {
+					myDisplay(value);
+				},
+				function (error) {
+					myDisplay(error);
+				}
+			);
+		</script>
 	</body>
 </html>
